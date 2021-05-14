@@ -4,10 +4,9 @@ SECRET_KEY = os.urandom(32)
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Enable debug mode.
-DEBUG = True
+DEBUG = False
 
-# Connect to the database
+# Database URI
+SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:udacity@localhost:5432/fyyur'
 
-
-# TODO IMPLEMENT DATABASE URL
-SQLALCHEMY_DATABASE_URI = '<Put your local database url>'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
