@@ -21,7 +21,6 @@ class Venue(db.Model):
     def __repr__(self):
         return f'<Venue {self.id} {self.name}>'
 
-
 class Artist(db.Model):
     __tablename__ = 'artists'
 
@@ -40,7 +39,6 @@ class Artist(db.Model):
 
     def __repr__(self):
         return f'<Artist {self.id} {self.name}>'
-
 
 class Show(db.Model):
     __tablename__ = 'shows'
